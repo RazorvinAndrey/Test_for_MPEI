@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}" />
+    <link rel="shortcut icon" type="image/png" href="{% static 'favicon.ico' %}">
+    <title>Результаты</title>
+</head>
+<body class="container">
+<div class="Textoc">
+        <p class="t">Тебе подойдут направления:</p>
+     <table class="tablic">
+        <tr>
+            <td><p class="t">{{ one }}</p></td>
+        </tr>
+        <tr>
+            <td><p class="t">{{ two }}</p></td>
+        </tr>
+        <tr>
+            <td><p class="t">{{ tre }}</p></td>
+        </tr>
+     </table>
+</div>
+</body>
+</html>

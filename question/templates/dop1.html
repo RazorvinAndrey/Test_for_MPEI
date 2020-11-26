@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}" />
+    <link rel="shortcut icon" type="image/png" href="{% static 'favicon.ico' %}">
+    <title>Тест МЭИ</title>
+</head>
+<body class="container">
+    <div class="Text">
+            <form method="POST" action="/dop/">
+                {% csrf_token %}
+                <h1 class="t">Вам нужно пройти ещё {{ v }} вопроса, и вы узнаете подходящее направление.</h1>
+                <table class="tab">
+                    <tr>
+                        <td><input class="But_Start"  type="submit" name="fuck" value="Ok"></td>
+                    </tr>
+                </table>
+            </form>
+    </div>
+</body>
+</html>

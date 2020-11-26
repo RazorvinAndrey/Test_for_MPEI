@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}" />
+    <link rel="shortcut icon" type="image/png" href="{% static 'favicon.ico' %}">
+    <title>Тест МЭИ</title>
+</head>
+<body class="container">
+<div class="Text">
+        <form method="POST" action="/dop/">
+            <input type="hidden" name="q" value="{{ num }}"/>
+            {% csrf_token %}
+            <p class="t">{{ q }}</p>
+            <table class="tab">
+                <tr>
+                    <td><input class="But" type="submit" name="value" value="1"></td>
+                    <td><input class="But" type="submit" name="value" value="2"></td>
+                    <td><input class="But" type="submit" name="value" value="3"></td>
+                    <td><input class="But" type="submit" name="value" value="4"></td>
+                    <td><input class="But" type="submit" name="value" value="5"></td>
+                    <td><input class="But" type="submit" name="value" value="6"></td>
+                    <td><input class="But" type="submit" name="value" value="7"></td>
+                    <td><input class="But" type="submit" name="value" value="8"></td>
+                    <td><input class="But" type="submit" name="value" value="9"></td>
+                    <td><input class="But" type="submit" name="value" value="10"></td>
+                </tr>
+            </table>
+        </form>
+</div>
+</body>
+</html>
