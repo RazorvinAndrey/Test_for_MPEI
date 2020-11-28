@@ -53,6 +53,10 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
+ALLOWED_HOSTS = [
+    'still-earth-82639.herokuapp.com',  # Allow domain and subdomains
+]
+
 ROOT_URLCONF = 'testic.urls'
 
 TEMPLATES = [
