@@ -83,11 +83,15 @@ WSGI_APPLICATION = 'testic.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'd2nengnbm4ceni',
+        'HOST': 'ec2-54-81-37-115.compute-1.amazonaws.com',
+        'PORT': 5432,
+        'USER': 'tgjxgszbfmbgeu',
+        'PASSWORD': '4aef3bc602a431dcd1f3434291227783661e6f3c86591381bc06a0a4c2785e8e',
     }
 }
-
+postgres://tgjxgszbfmbgeu:4aef3bc602a431dcd1f3434291227783661e6f3c86591381bc06a0a4c2785e8e@ec2-54-81-37-115.compute-1.amazonaws.com:5432/d2nengnbm4ceni
 
 # Password validation
 # https://docs.djangoproject.com/en/3.1/ref/settings/#auth-password-validators
